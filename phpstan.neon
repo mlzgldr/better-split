@@ -1,0 +1,16 @@
+includes:
+    # see https://github.com/symplify/phpstan-rules
+    - vendor/symplify/phpstan-rules/config/static-rules.neon
+
+parameters:
+    level: 8
+
+    paths:
+        - src
+        - tests
+        - entrypoint.php
+
+    ignoreErrors:
+        -
+            message: '#Use separate function calls with readable variable names#'
+            path: entrypoint.php
